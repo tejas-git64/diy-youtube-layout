@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#"><img src="./youtube.svg" alt="youtube" /><p>YouTube</p></a>
+      <button id="mic"><img src="./voice.svg" alt="mic" /></button>
+      <input type="search" placeholder="Search" id="query" />
+      <button id="search"><img src="./search.svg" alt="search" onclick="search()" value=""/></button>
+      <div class="yt-apps">
+        <button onclick="ytapps()"><img src="./apps-menu.svg" alt="apps" /></button>
+        <ul id="menu-1">
+          <a href="#"><img src="./tv.svg" alt="yt-tv"><span>YouTube TV</span></img></a>
+          <a href="#"><img src="./music.svg" alt="yt-music"></img><span>YouTube Music</span></a>
+          <a href="#"><img src="./kid.svg" alt="yt-kids"></img><span>YouTube Kids</span></a>
+          <a href="#"><img src="./idea.svg" alt="creator"></img><span>Creator Academy</span></a>
+          <a href="#"><img src="./paint-palette.svg" alt="artists"></img><span>YouTube for Artists</span></a>
+        </ul>
+      </div>
+      <div class="more">
+         <button onclick="more()"><img src="./more.svg" alt="more" /></button>
+        <ul id="menu-2">
+          <a href="#"><img src="./sun.svg" alt="apperance"><span>Device Apperance:</span></img></a>
+          <a href="#"><img src="./translate.svg" alt="language"></img><span>Language:</span></a>
+          <a href="#"><img src="./globe.svg" alt="location"></img><span>Location</span></a>
+          <a href="#"><img src="./personal-data.svg" alt="data"></img><span>Your data in YouTube</span></a>
+          <a href="#"><img src="./help.svg" alt="help"></img><span>Help</span></a>
+          <a href="#"><img src="./keyboard.svg" alt="keyboard"></img><span>Keyboard Shortcuts</span></a>
+        </ul>
+      </div>
+      <a href="#">Sign in</a>
+    </nav>
+    <section class="categories">
+      <ul id="vid-type">
+      <a href="#">All</a>
+      <a href="#">music</a>
+      <a href="#">Live</a>
+      <a href="#">Playlists</a>
+      <a href="#">Gaming</a>
+      <a href="#">Eating</a>
+      <a href="#">Love Songs</a>
+      <a href="#">Backgrounds</a>
+      <a href="#">Nature</a>
+      <a href="#">Lo-fi</a>
+      <a href="#">Comedy</a>
+      <a href="#">Entertainment</a>
+      <a href="#">Education</a>
+      <a href="#">Sports</a>
+      <a href="#">Productivity</a>
+      <a href="#">Explore</a>
+      <a href="#">Design</a>
+      <a href="#">Movie clips</a>
+      <a href="#">ChillHop music</a>
+      <a href="#">Fashion</a>
+      <a href="#">Cat videos</a>
+      <a href="#">Dramas</a></ul>
+    </section>
+    <div class="menu">
+    <div class="user">
+    <ul>
+      <li><a href="#Home"><img src="./house.svg" alt="home"><span>Home</span></a></li>
+      <li><a href="https://www.youtube.com/feed/explore"><img src="./direction.svg" alt="explore"><span>Explore</span></a></li>
+      <li><a href="https://www.youtube.com/feed/subscriptions"><img src="./subscription.svg" alt="subs"><span>Subscriptions</span></a></li>
+      <li><a href="https://www.youtube.com/feed/library"><img src="./library.svg" alt="library"><span>Library</span></a></li>
+      <li><a href="https://www.youtube.com/feed/history"><img src="./history.svg" alt="history"><span>History</span></a></li>
+    </ul></div>
+    <div class="youtube">
+      <ul>
+      <li><img src="./youtubep.svg" alt="play"><p>BEST OF YOUTUBE</p></li>
+      <li><a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"><img src="./yt-music.svg" alt="music"><span>Music</span> </a></li>
+      <li><a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"><img src="./sports.svg" alt="sports"><span>Sports</span> </a></li>
+      <li><a href="https://www.youtube.com/gaming"><img src="./video-game.svg" alt="gaming"><span>Gaming</span> </a></li>
+      <li><a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"><img src="./newspaper.svg" alt="news"><span>News</span> </a></li>
+      <li><a href="https://www.youtube.com/channel/UCrpQ4p1Ql_hG8rKXIKM1MOQ"><img src="./fashion.svg" alt="fashion"><span>Fashion</span> </a></li>
+      <li><a href="https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig"><img src="./live.svg" alt="live"><span>Live</span> </a></li>
+      <li><a href="https://www.youtube.com/channel/UCzuqhhs6NWbgTzMuM09WKDQ"><img src="./virtual-reality.svg" alt="360"><span>360 videos</span> </a></li>
+      <li><a href="https://www.youtube.com/feed/guide_builder"><img src="./browse.svg" alt="extra"><span>Browse Channels</span> </a></li>
+      <li><a href="https://www.youtube.com/premium"><img src="./premium.svg" alt="youtube-premium"><span>Premium</span> </a></li>
+      </ul></div>
+    <div class="help">
+      <ul>
+        <li><a href="#Settings"><img src="./settings.svg" alt="settings"><span>Settings</span></a></li>
+        <li><a href="#Report"><img src="./flag.svg" alt="report"><span>Report</span></a></li>
+        <li><a href="#Help"><img src="./help.svg" alt="help"><span>Help</span></a></li>
+        <li><a href="#Feedback"><img src="./feedback.svg" alt="feedback"><span>Feedback</span></a></li>
+      </ul>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Creators</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Policy & Safety</a></li>
+        <li><a href="#">How Youtube works</a></li>
+        <li><a href="#">Test new features</a></li>
+        <li><p>@2021 Google LLC</p></li>
+      </ul>
+    </div>
+    </div>
+    <section id="content" class="grid-container--fill">
+      <a href="https://www.youtube.com/watch?v=hlWiI4xVXKY">
+        <img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/beautiful-nature-norway_nnpmde3nl_thumbnail-1080_01.png" alt="">
+        <img src="https://2.bp.blogspot.com/_NDSmr7zDPfI/Suvbra4_BBI/AAAAAAAAFk0/H5VkFKIXYGo/s400/Moonrise-1.jpg">
+        <ul>
+          <span>Beautiful Relaxing Music</span>
+          <span>Soothing Relaxation</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=QB-fo_bGnQs">
+        <img src="https://i.ytimg.com/vi/70-pW6iWhhs/maxresdefault.jpg" alt="">
+        <img src="https://chillhop.com/wp-content/uploads/2020/06/CH-Discography.jpg">
+        <ul>
+          <span>Chillhop Essentials Spring 2019</span>
+          <span>ChillHop Music</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=BtN-goy9VOY">
+        <img src="https://www.awolfillustrations.com/wp-content/uploads/2020/03/Kurzgesagt-Corona-Virus.jpg" alt="">
+        <img src="https://miro.medium.com/max/2400/1*stC1Hw3EPXYU0VhX8n5_kw.png">
+        <ul>
+          <span>The coronavirus and how to prevent it</span>
+          <span>Kurzgesagt - in a Nutshell</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=_kP2luZsHeo">
+        <img src="https://pavbca.com/walldb/original/7/5/9/594556.jpg" alt="">
+        <img src="https://yt3.ggpht.com/a/AATXAJxm0EsUplNms9navypvpX4BIwxi_MXOfNuMZw=s100-c-k-c0xffffffff-no-rj-mo">
+        <ul>
+          <span>Juelz - Inferno</span>
+          <span>Trap Nation</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=S3znT2T3A0M">
+        <img src="https://i.ytimg.com/vi/ebqLZQJ8VJ0/maxresdefault.jpg" alt="">
+        <img src="https://media.senscritique.com/media/000012697144/100/Cyanide_Happiness.png">
+        <ul>
+          <span>Exit - Cyanide and Happiness</span>
+          <span>ExplosmEntertainment</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=jczf14iQOcc">
+        <img src="https://www.lowyat.net/wp-content/uploads/2021/02/Android-12-Mockup-Leaks-6.jpg" alt="">
+        <img src="https://media.trustradius.com/product-logos/H1/0L/UGJ39PDHNUZT-180x180.PNG">
+        <ul>
+          <span>#Android12:Powerful privacy features</span>
+          <span>Android</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <img src="https://i.ytimg.com/vi/thKYilSzLG8/maxresdefault.jpg" alt="">
+        <img src="https://www.aboutmanchester.co.uk/wp-content/uploads/2020/04/DFA6B3F3-EBD2-48C4-A4C7-9BB23067CE01.jpeg">
+        <ul>
+          <span>Rick Astley - Never Gonna Give You Up</span>
+          <span>Official Rick Astley</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=UvTRLyXr5xQ">
+        <img src="https://www.lifesavvy.com/thumbcache/0/0/8520059ab0bd146ca429d1b2f847fe79/p/uploads/2020/09/9fc6c244.jpg" alt="">
+        <img src="https://yt3.ggpht.com/a/AATXAJzA3z0uvUrHvfH--19-AvWdb3kEitZHRnmo-g=s900-c-k-c0xffffffff-no-rj-mo">
+        <ul>
+          <span>Plants growing Timelapse</span>
+          <span>BoxLapse</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=jSUgeQ4Q0R4">
+        <img src="https://www.otakupt.com/wp-content/uploads/2020/11/Cells-at-Work-Code-Black-visual.jpg" alt="">
+        <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/33/64/c9/3364c90f-89e7-18f3-3d3c-cc56f62225ef/source/200x200bb.jpg">
+        <ul>
+          <span>Cells at work! CODE BLACK</span>
+          <span>Funimation</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=W15A7Lf0_fI">
+        <img src="https://i.insider.com/5a339f3eec1ade12ec21a5b8?width=1190" alt="">
+        <img src="https://yt3.ggpht.com/-RQz4fnGYYAc/AAAAAAAAAAI/AAAAAAAAAAA/GqV-ppPCHbE/s240-c-k-no-mo-rj-c0xffffff/photo.jpg">
+        <ul>
+          <span>Where Did Bitcoin come from?</span>
+          <span>ColdFusion</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=iJKCj8uAHz8">
+        <img src="https://i.ytimg.com/vi/ypXY7wtBjck/maxresdefault.jpg" alt="">
+        <img src="https://yt3.ggpht.com/-bWUaHwGz7To/AAAAAAAAAAI/AAAAAAAAAAA/xEUD6X5iT2Y/s900-c-k-no-rj-c0xffffff/photo.jpg">
+        <ul>
+          <span>Learn Bootstrap 5 and SASS</span>
+          <span>freeCodeCamp.org</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=-uM6ffDlqFE">
+        <img src="https://i.ytimg.com/vi/-uM6ffDlqFE/maxresdefault.jpg" alt="">
+        <img src="https://yt3.ggpht.com/a/AGF-l7-UBNJfAWfZT7JA9d8WeQKU_8A4NL3r2xcyhw=s900-mo-c-c0xffffffff-rj-k-no">
+        <ul>
+          <span>5 Scary Things Caught on Camera</span>
+          <span>Nuke's Top 5</span>
+        </ul>
+      </a>
+      <a href="https://www.youtube.com/watch?v=T2RO4ytfW5w">
+        <img src="https://i.ytimg.com/vi/iiLGg4Rl_6A/maxresdefault.jpg" alt="">
+        <img src="https://vloggergear.com/wp-content/uploads/2017/02/jre.jpg">
+        <ul>
+          <span>Mordern Conveniences are making us weaker</span>
+          <span>PowerfulJRE</span>
+        </ul>
+      </a>
+    </section>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
